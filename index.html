@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Happy Birthday, Sayangku! 💖</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Hubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero section dengan ucapan -->
+        <div class="hero">
+            <div class="floating-hearts" id="floatingHearts"></div>
+            <h1 class="greeting">✨ Happy Birthday, <span id="namaPacar">Sayangku</span>! ✨</h1>
+            <p class="subtitle">Untuk wanita paling istimewa di hidupku</p>
+            <div class="cake-icon">
+                <i class="fas fa-birthday-cake"></i> 🎂
+            </div>
+            <button id="kejutanBtn" class="btn-kejutan"><i class="fas fa-gift"></i> Klik untuk kejutan!</button>
+        </div>
+
+        <!-- Bagian Cerita Kita -->
+        <div class="card story-card">
+            <h2><i class="fas fa-heart"></i> Tentang Aku & Kamu <i class="fas fa-heart"></i></h2>
+            <div class="story-content">
+                <p>💕 Dari pertama kali aku melihat senyummu, aku tahu kalau kamu orang yang spesial. Setiap hari bersamamu seperti potongan surga yang nyata.</p>
+                <p>💖 Kamu mengajarkanku arti cinta, kesabaran, dan kebahagiaan sederhana. Terima kasih untuk setiap tawa, pelukan, dan cerita malam hari.</p>
+                <p>🌟 Di hari ulang tahunmu ini, aku hanya ingin kamu tahu: <strong>aku mencintaimu lebih dari kata-kata bisa ungkapkan.</strong> Semoga semua impianmu jadi nyata.</p>
+                <p class="signature">- Dari aku, yang selalu merindukanmu setiap detik 💌</p>
+            </div>
+        </div>
+
+        <!-- Galeri Foto (pakai contoh placehold, ganti dengan foto pacar kamu) -->
+        <div class="card gallery-card">
+            <h2><i class="fas fa-camera-retro"></i> Galeri Cinta <i class="fas fa-camera-retro"></i></h2>
+            <p class="gallery-sub">Beberapa foto cantikmu yang bikin aku jatuh hati setiap hari ✨</p>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Foto-foto akan ditampilkan lewat JS, tapi kita isi dengan contoh placeholder. Ganti src dengan foto pacar asli! -->
+            </div>
+            <div class="gallery-note">
+                <i class="fas fa-heartbeat"></i> Klik fotonya untuk kejutan tambahan!
+            </div>
+        </div>
+
+        <!-- Kotak pesan interaktif -->
+        <div class="card message-card">
+            <h2><i class="fas fa-envelope-open-text"></i> Pesan Spesial</h2>
+            <div class="message-box" id="messageBox">
+                <p id="displayMessage">💗 Kamu adalah alasan aku tersenyum setiap hari. 💗</p>
+            </div>
+            <div class="message-buttons">
+                <button class="msg-btn" data-msg="Kamu itu secantik bintang di langit malam 🌟✨">💫 Bintangku</button>
+                <button class="msg-btn" data-msg="Aku bersyukur kamu lahir di dunia ini. Terima kasih sudah menjadi milikku 🌹">🌹 Syukur</button>
+                <button class="msg-btn" data-msg="Setiap hari bersamamu adalah anugerah. I Love You! 💖">💖 I Love You</button>
+                <button class="msg-btn" data-msg="Cintaku padamu nggak akan pernah pudar, selamanya 💑">💑 Selamanya</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk preview foto besar dan animasi -->
+    <div id="modalPhoto" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Floating hati animasi background -->
+    <div class="bg-hearts"></div>
+
+    <!-- Hubungkan file JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
